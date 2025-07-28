@@ -57,7 +57,7 @@ def objective(**params):
         'constraint': constraint
     }
     history.append(result)
-    # print 可以保留调试用
+    # print 
     print(f"params={np.round(x.flatten(), 2)}, y={np.round(y, 2)}, loss={loss:.2f}, constraint={constraint}")
     if constraint:
         return etch_depth
